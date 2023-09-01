@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.3.0/crypto-js.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Favorite Super Heros</title>
+  </head>
+  <body>
+    <div class="background-image"></div>
+
+    <header class="bg-transparent">
+      <div
+        class="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-700 lg:px-8"
+      >
+        <div class="relative flex h-16 justify-between">
+          <div class="relative z-10 flex px-2 lg:px-0">
+            <div class="flex flex-shrink-0 items-center">
+              <!-- <img
+                class="h-8 w-auto"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                alt="Your Company"
+              /> -->
+              <a href="index.html" class="text-gray-100 text-2xl">SuperHero</a>
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:relative lg:z-10 lg:ml-4 lg:flex lg:items-center"
+          >
+            <!-- Profile dropdown -->
+            <div class="relative ml-4 flex-shrink-0">
+              <a
+                href="favoriteheros.html"
+                class="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+              >
+                Favorites
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="py-24 sm:py-32">
+      <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-6 px-6 lg:px-8">
+        <ul
+          role="list"
+          id="favoritesList"
+          class="grid gap-x-8 gap-y-6 sm:grid-cols-3 sm:gap-y-8 xl:col-span-2 overflow-y-auto"
+        >
+          <li class="flex items-center bg-gray-100 gap-x-6 p-4 rounded-md">
+            <img
+              class="h-16 w-16 rounded-full"
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div>
+              <h3
+                class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+              >
+                Leslie Alexander
+              </h3>
+              <p class="text-sm font-semibold leading-6 text-indigo-600">
+                Co-Founder / CEO
+              </p>
+            </div>
+          </li>
+
+          <!-- More people... -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="favoriteheros.js"></script>
+    <!-- Include your JavaScript file -->
+  </body>
+</html>
