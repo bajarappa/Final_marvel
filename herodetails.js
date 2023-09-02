@@ -157,19 +157,3 @@ loadConfig().then((config) => {
     }
   }
 });
-
-// Function to add superhero to favorites
-function addToFavorites(superhero) {
-  // Get the list of favorite superheroes from local storage or initialize an empty array
-  const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-
-  // Check if the superhero is already in favorites
-  const isDuplicate = favorites.some((fav) => fav.id === superhero.id);
-
-  if (!isDuplicate) {
-    favorites.push(superhero);
-
-    // Update the list of favorites in local storage
-    localStorage.setItem("favorites", JSON.stringify(favorites));
-  }
-}
